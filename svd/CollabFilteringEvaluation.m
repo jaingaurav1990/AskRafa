@@ -15,7 +15,7 @@ nil = 99;  % missing value indicator
 % Load data
 L = load(filename);
 X = L.X;
-
+                
 % Split intro training and testing index sets
 idx = find(X ~= nil); 
 n = numel(idx);
