@@ -51,7 +51,7 @@ id_col = 1:nExamples;
 z_size = [nClusters, nExamples];
 while (change>threshold && iterations < maxIter),
     iterations = iterations+1;
-    disp(sprintf('Iterations = %d  Change = %0.5g.', iterations, change));
+    %disp(sprintf('Iterations = %d  Change = %0.5g.', iterations, change));
 
     % Assignment step: estimate class indices
     for k = 1:nClusters

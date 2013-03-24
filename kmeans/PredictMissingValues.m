@@ -29,7 +29,7 @@ X_pred(missing_values_indices) = avg_of_means(missing_values_indices);
 
 %Now apply k-means
  
-K = 30;
+K = 5;
 
 [z, U, score] = k_means(X_pred', K);
 %ClustInx = ClustInx(:);    % Convert the array of cluster indices to a vector
