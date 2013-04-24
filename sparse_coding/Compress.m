@@ -1,5 +1,5 @@
 function I_comp = Compress(I);
-%figure, imshow(I);
+figure, imshow(I);
 % Your compression code goes here
 
 % Feature Extraction
@@ -64,15 +64,6 @@ for chan=1:channels
 
       Z(abs(Z) < 0.25) = 0;
       
-      if (chan == 1)
-          str = 'red';
-      elseif (chan == 2)
-          str = 'blue';
-      else 
-          str = 'green';
-      end
-      %I_comp.str = sparse(I_onedim);
-      str
       if (chan == 1)
         I_comp.red_trans = sparse(Z);
       elseif (chan == 2)

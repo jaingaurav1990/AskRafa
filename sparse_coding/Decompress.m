@@ -19,20 +19,13 @@ for chan=1:channels
         I_blue_trans = Z;
     end
     
-    %figure,imshow(Z);
     size(Z);
     H = haarTrans(N);
-    %Z1 = Z*H;
     Img = H'*Z*H;
     I = Img(1:m,1:n);
     I_rec(:,:,chan) = Img(1:m,1:n);
-    %figure,imshow(I);
-    %I_rec(:,:,chan) = Img(1:m, 1:n);
     
 end
-%figure, imshow(I_red_trans);
-%figure, imshow(I_green_trans);
-%figure, imshow(I_blue_trans);
 % Uncomment following to view decompressed images
-%figure,imshow(I_rec);
+figure,imshow(I_rec);
 %I_rec = I_comp.I; % this is just a stump to make the evaluation script run, replace it with your code!
